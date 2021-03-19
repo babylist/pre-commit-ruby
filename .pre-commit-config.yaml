@@ -1,6 +1,6 @@
 repos:
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v1.3.0
+  rev: v3.4.0
   hooks:
   # Git state
   - id: check-merge-conflict
@@ -9,8 +9,6 @@ repos:
     stages: [commit]
   # Sensitive information
   - id: detect-private-key
-    stages: [commit]
-  - id: detect-aws-credentials
     stages: [commit]
   # Generic file state
   - id: trailing-whitespace
