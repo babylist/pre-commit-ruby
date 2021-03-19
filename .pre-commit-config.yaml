@@ -32,6 +32,7 @@ repos:
     types: ['ruby']
     stages: [commit]
     verbose: true
+    exclude: Gemfile.lock
 - repo: https://github.com/mattlqx/pre-commit-sign
   rev: v1.1.1
   hooks:
